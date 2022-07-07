@@ -1,4 +1,4 @@
-import Book from "./modules/books";
+import Book from "./modules/books.js";
 
 const bookForm = document.querySelector('#book-form');
 const bookTitle = document.querySelector('#title');
@@ -33,3 +33,6 @@ const display = () => {
   document.querySelector('#book-list').addEventListener('click', (e) => {
     Book.deleteBook(e.target);
   });
+
+  getDate.displayFunction();
+

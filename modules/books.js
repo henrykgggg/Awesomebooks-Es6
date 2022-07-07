@@ -24,7 +24,6 @@ export default class Book {
         if (el.classList.contains('delete')) {
           const text = el.parentElement.parentElement.firstChild.innerText.split('.')[0];
           el.parentElement.parentElement.remove();
-          // Added code to remove
           const obj = JSON.parse(localStorage.getItem('books'));
           const books = { allbook: [] };
           obj.allbook.forEach((el) => {
