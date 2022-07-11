@@ -34,5 +34,13 @@ const display = () => {
     Book.deleteBook(e.target);
   });
 
-  getDate.displayFunction();
+  getDate.displayLuxon();
 
+  const newBook = document.getElementById('newbookLi');
+  const myForm = document.getElementById('myForm');
+  const myBookList = document.getElementById('bookList');
+  const myList = document.getElementById('list');
+  const myHome = document.getElementById('home');
+  const myContact = document.getElementById('contacts');
+  const contactNavLink = document.getElementById('contactNavLi');
+  
