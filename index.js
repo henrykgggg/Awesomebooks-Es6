@@ -1,4 +1,5 @@
 import Book from "./modules/books.js";
+import getDate from "./modules/date.js";
 
 const bookForm = document.querySelector('#book-form');
 const bookTitle = document.querySelector('#title');
@@ -44,3 +45,21 @@ const display = () => {
   const myContact = document.getElementById('contacts');
   const contactNavLink = document.getElementById('contactNavLi');
   
+newBook.addEventListener('click', () => {
+  myContact.style.cssText = 'display: none;';
+  myBookList.style.cssText = 'display: none;';
+  myForm.style.cssText = 'display: flex;';
+})
+
+myList.addEventListener('click', () =>{
+  myForm.style.cssText = 'display: none;';
+  myBookList.style.cssText = 'display: flex;';
+  myContact.style.cssText = 'display: none;';
+})
+
+
+contactNavLink.addEventListener('click', () =>{
+  myForm.style.cssText = 'display: none;';
+  myBookList.style.cssText = 'display: none;';
+  myContact.style.cssText = 'display: flex;';
+})
