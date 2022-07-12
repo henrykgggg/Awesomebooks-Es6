@@ -3,7 +3,7 @@ export default class Book {
         this.title= title;
         this.author = author;
     }
-    add() {
+    add() { 
         const bookObj = {
             allbook: [] 
         };
