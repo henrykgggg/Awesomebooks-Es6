@@ -1,11 +1,11 @@
-
+import { DateTime } from "./luxon.js";
 
 export default class getDate {
   static displayLuxon() {
     setInterval(() => {
       const now = DateTime.now();
       const months = [
-        'Jan',
+        'January',
         'Feb',
         'Mac',
         'Apr',
