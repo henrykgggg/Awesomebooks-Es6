@@ -1,5 +1,5 @@
-import Book from './modules/books.js';
-import getDate from './modules/date.js';
+import Book from './modules/books.js';// eslint-disable-line
+import getDate from './modules/date.js';// eslint-disable-line
 
 const bookForm = document.querySelector('#book-form');
 const bookTitle = document.querySelector('#title');

@@ -1,4 +1,4 @@
-import { DateTime } from './luxon.js';
+import { DateTime } from './luxon.js';// eslint-disable-line
 
 export default class getDate {
   static displayLuxon() {
