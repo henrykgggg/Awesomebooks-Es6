@@ -1,108 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>awesomebook</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <main>
-        <div class="container-lg ">
+      <div class="container-lg">
+        <nav class="navbar navbar-light bg-light border border-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="home"> Awesome Books </a>
 
-          <nav class="navbar navbar-light bg-light  border border-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#" id="home">
-      
-      Awesome Books
-    </a>
+            <div class="">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    id="list"
+                    >List</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="newbookLi">Add New</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="contactNavLi">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="text-end mb-5" id="current_date"></div>
+        <div class="card">
+          <section id="bookList">
+            <div>
+              <h1 class="pageTitle text-center">All Books</h1>
 
-    <div class ="">
-     <ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#" id="list">List</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" id="newbookLi">Add New</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" id="contactNavLi">Contact</a>
-  </li>
-
-</ul>
-    </div>
-  </div>
-</nav>
-<div class="text-end mb-5" id="current_date"></div>
-            <div class="card">
-       <section id="bookList">
-        <div>
-           <h1 class="pageTitle text-center">All Books</h1>
-
-                <table class="table table-stripped table-hover">
+              <table class="table table-stripped table-hover">
                 <thead>
-                    <tr>
-                        <th scope="col">Book</th>
-                        <th scope="col">Delete</th>
-                    </tr>
-                <tbody id="book-list">
+                  <tr>
+                    <th scope="col">Book</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
 
-                </tbody>
-            </table>
+                <tbody id="book-list"></tbody>
+              </table>
+            </div>
+          </section>
+          <div class="formSection mt-3" id="myForm">
+            <h2 class="text-center mb-5">Add New Book</h2>
+
+            <form class="row g-3 d_flex flex-row" id="book-form">
+              <div class="col-sm-4">
+                <label for="title" class="visually-hidden">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  placeholder="Title"
+                  required
+                />
+              </div>
+              <div class="col-sm-4">
+                <label for="author" class="visually-hidden">Author</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="author"
+                  placeholder="Author"
+                  required
+                />
+              </div>
+              <div class="submit d-flex justify-content-center">
+                <button type="submit" id="submit" class="btn btn-primary mb-3">
+                  Add Book
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-       </section>
-<div class="formSection mt-3" id="myForm" >
-   <h2 class="text-center mb-5">Add New Book</h2>
-  
-            <form class="row g-3 d_flex" id="book-form">
-   
-  <div class="col-sm-4">
-    <label for="title" class="visually-hidden">Title</label>
-    <input type="text" class="form-control" id="title" placeholder="Title" required>
-  </div>
-  <div class="col-sm-4">
-    <label for="author" class="visually-hidden">Author</label>
-    <input type="text" class="form-control" id="author" placeholder="Author" required>
-  </div>
-  <div class="submit d-flex justify-content-center">
-    <button type="submit" id="submit" class="btn btn-primary mb-3">Add Book</button>
-  </div>
-</form>
-</div>
-
-</div>
-<section class="contacts mt-5 text-center" id="contacts">
-<div class="title">
-<h2>Contact Information</h2>
-</div>
-<div class="container d_flex">
-<div class="contact-details">
-  <p>Do you have any question or you just want to say "Hello"? <br> You can reach us on our Github pages</p>
-  <ul class="info list-unstyled d-flex flex-column">
-    <li>
-      <a href="https://github.com/henrykgggg">karamaga</a>
-    </li>
-  </ul>
-</div>
-</div>
-
-</section>
-<section class="contacts border border-dark align-bottom mt-5">
-<div class="main-footer">
-<div class="footer">
-  <p>
-    copy right    ...
-  </p>
-</div>
-</div>
-</section>
-</div>
-    
-
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="index.js" type="module"></script>
-</body>
+        <section class="contacts mt-5 text-center flex-column" id="contacts">
+          <div class="title">
+            <h2>Contact Information</h2>
+          </div>
+          <div class="container d_flex">
+            <div class="contact-details">
+              <p>
+                Do you have any question or you just want to say "Hello"? <br />
+                You can reach us on our Github pages
+              </p>
+              <ul class="info list-unstyled d-flex flex-column">
+                <li>
+                  <a href="https://github.com/henrykgggg">karamaga</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contacts border border-dark align-bottom mt-5">
+          <div class="main-footer">
+            <div class="footer">
+              <p>copy right ...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>

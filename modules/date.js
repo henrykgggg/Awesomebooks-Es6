@@ -1,11 +1,11 @@
-
+import { DateTime } from './luxon.js';// eslint-disable-line
 
 export default class getDate {
   static displayLuxon() {
     setInterval(() => {
       const now = DateTime.now();
       const months = [
-        'Jan',
+        'January',
         'Feb',
         'Mac',
         'Apr',
