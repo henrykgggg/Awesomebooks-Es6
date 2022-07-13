@@ -1,4 +1,4 @@
-import { DateTime } from "./luxon.js";
+import { DateTime } from './luxon.js';
 
 export default class getDate {
   static displayLuxon() {

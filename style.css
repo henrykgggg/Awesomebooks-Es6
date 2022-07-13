@@ -1,23 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "poppins", sans-serif;
-  }
-  
-  #newbookLi {
-    margin: 2px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  #contacts {
-    padding-top: 30px;
-    text-align: center;
-    font-size: 23px;
-  }
-  #myForm {
-    padding-top: 10px;
-    flex-direction: column;
-  }
+body {
+  font-family: "poppins", sans-serif;
+}
+
+#newbookLi {
+  margin: 2px;
+}
+
+#contacts {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 23px;
+}
+
+#myForm {
+  padding-top: 10px;
+  flex-direction: column;
+}
