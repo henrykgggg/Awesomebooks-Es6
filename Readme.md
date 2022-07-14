@@ -4,7 +4,7 @@ Personal library which allow user to add name of the book and at the same time w
 
 ## Built With
 
-- HTML
+- html
 - CSS
 - Javascript
 - Bootstrap
