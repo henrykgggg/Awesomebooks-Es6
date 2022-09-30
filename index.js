@@ -1,7 +1,7 @@
 import Book from './modules/books.js';// eslint-disable-line
 import getDate from './modules/date.js';// eslint-disable-line
 
-const bookForm = document.querySelector('#book-form');
+const BOOKForm = document.querySelector('#book-form');
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
 const booksList = document.querySelector('#book-list');
@@ -20,7 +20,7 @@ const display = () => {
   }
 };
 
-bookForm.addEventListener('submit', (e) => {
+BOOKForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const newBook = new Book(bookTitle.value, bookAuthor.value);
   if (bookTitle.value !== '' && bookAuthor.value !== '') {
